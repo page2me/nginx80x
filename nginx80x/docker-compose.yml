@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    nginx:
+        container_name: nginx80x
+        ports:
+            - '80x:80'
+        volumes:
+            - '/home/page2me/nginx80x/html:/usr/share/nginx/html'
+        image: 'nginx:alpine'
